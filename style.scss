@@ -10,6 +10,7 @@ body {
     height: 100%;
     width: 100%;
     box-sizing: border-box;
+    font-family: 'VT323', monospace;
 }
 
 // Main Styles
@@ -20,7 +21,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: url(https://images.unsplash.com/photo-1516074269859-f54ee0d65fa7?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=59843ca59ee74e93c09ac3ce391f96f1&auto=format&fit=crop&w=1934&q=80) center center / cover no-repeat;
+    background: url(https://images.unsplash.com/photo-1504177847824-d075f5706770?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=b0cbac285155af48209f620d43cdbeb6&auto=format&fit=crop&w=1934&q=800) center center / cover no-repeat;
 
     &__content {
         width: 100%;
@@ -30,7 +31,7 @@ body {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        color: #3E2723;
+        color: #fff;
     }
 
     .content {
@@ -49,8 +50,8 @@ body {
         }
 
         &__cta {
-            background: #3E2723;
-            color: #fff;
+            background: #fff;
+            color: #c019a8;
             width: 10rem;
             height: 2rem;
             border-radius: 2rem;
@@ -58,9 +59,13 @@ body {
             cursor: pointer;
             border: none;
             outline: none;
+            font-family: 'VT323', monospace;
+            text-transform: uppercase;
+            letter-spacing: .125rem;
 
             &:hover {
-                background: darken($color: #3E2723, $amount: 5%);
+                background: darken($color: #c019a8, $amount: 5%);
+                color: #fff;
             }
         }
     }
